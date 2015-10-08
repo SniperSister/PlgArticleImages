@@ -1,0 +1,23 @@
+sudo: false
+
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
+
+script:
+  - composer install --prefer-dist --no-interaction --no-progress
+  - git clone https://github.com/djumla/codestyles.git /tmp/sniff
+  - git clone https://github.com/joomla/joomla-cms.git -b master /tmp/joomla
+  - ./vendor/bin/phpcs --standard=/tmp/sniff/phpcs/djumlajoomla src
+  - ./vendor/bin/phpmd src text phpmd.xml
+  - ./vendor/bin/phpcpd src
+  - ./vendor/bin/phpunit --configuration phpunit.xml.travis

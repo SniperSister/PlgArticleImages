@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/unit/bootstrap.php" colors="false">
+    <php>
+        <const name="JOOMLA_ROOT_PATH" value="/tmp/joomla" />
+    </php>
+
+    <testsuites>
+        <testsuite name="plugin">
+            <directory>tests/unit/suite</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
