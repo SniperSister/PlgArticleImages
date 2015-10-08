@@ -29,6 +29,6 @@
         </fields>
     </config>
     <updateservers>
-        <server type="extension" priority="1" name="djumla extensions update server">http://extensions.djumla.de/index.php?option=com_ars&view=update&task=stream&format=xml&id=3</server>
+        <server type="extension" priority="1" name="djumla extensions update server">http://extensions.djumla.de/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=3</server>
     </updateservers>
 </extension>
