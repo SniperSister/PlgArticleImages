@@ -90,25 +90,25 @@ class PlgSystemArticleimages extends JPlugin
     /**
      * gets the field xml for an additional image fields
      *
-     * @param   int  $i  count parameter for the image
+     * @param   int  $count  count parameter for the image
      *
      * @return  string
      */
-    public function getXmlForField($i)
+    public function getXmlForField($count)
     {
-        $label = $this->lang->_('PLG_ARTICLEIMAGES_ADDITIONAL_IMAGE_LABEL') . $i;
+        $label = $this->lang->_('PLG_ARTICLEIMAGES_ADDITIONAL_IMAGE_LABEL') . $count;
 
         return '<field
-                    name="image_spacer' . $i . '"
+                    name="image_spacer' . $count . '"
                     type="spacer"
                     hr="true"
                     />
                 <field
-                    name="image_additional' . $i . '"
+                    name="image_additional' . $count . '"
                     type="media"
                     label="' . $label . '" />
                 <field
-                    name="float_additional' . $i . '"
+                    name="float_additional' . $count . '"
                     type="list"
                     label="COM_CONTENT_FLOAT_LABEL"
                     description="COM_CONTENT_FLOAT_DESC">
@@ -117,12 +117,12 @@ class PlgSystemArticleimages extends JPlugin
                         <option value="left">COM_CONTENT_LEFT</option>
                         <option value="none">COM_CONTENT_NONE</option>
                 </field>
-                <field name="image_additional' . $i . '_alt"
+                <field name="image_additional' . $count . '_alt"
                     type="text"
                     label="COM_CONTENT_FIELD_IMAGE_ALT_LABEL"
                     description="COM_CONTENT_FIELD_IMAGE_ALT_DESC"
                     size="20"/>
-                <field name="image_additional' . $i . '_caption"
+                <field name="image_additional' . $count . '_caption"
                     type="text"
                     label="COM_CONTENT_FIELD_IMAGE_CAPTION_LABEL"
                     description="COM_CONTENT_FIELD_IMAGE_CAPTION_DESC"
