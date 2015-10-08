@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.4" type="plugin" group="user">
+<extension version="3.4" type="plugin" group="system">
     <name>PLG_SYSTEM_ARTICLEIMAGES</name>
     <author>David Jardin</author>
     <creationDate>%%CURRENTDATE%%</creationDate>
