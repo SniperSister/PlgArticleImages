@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 /**
  * A plugin to add additional image fields to an Joomla article
  *
- * @since  1.6
+ * @since  1.0
  */
 class PlgSystemArticleimages extends JPlugin
 {
@@ -20,7 +20,7 @@ class PlgSystemArticleimages extends JPlugin
      * Load the language file on instantiation.
      *
      * @var    boolean
-     * @since  3.1
+     * @since  1.0
      */
     protected $autoloadLanguage = true;
 
@@ -28,6 +28,7 @@ class PlgSystemArticleimages extends JPlugin
      * The language object
      *
      * @var null
+     * @since  1.0
      */
     protected $lang = null;
 
@@ -38,6 +39,8 @@ class PlgSystemArticleimages extends JPlugin
      * @param   array   $config    An optional associative array of configuration settings.
      *                             Recognized key values include 'name', 'group', 'params', 'language'
      *                             (this list is not meant to be comprehensive).
+     *
+     * @since  1.0
      */
     public function __construct(&$subject, $config = array())
     {
@@ -53,7 +56,7 @@ class PlgSystemArticleimages extends JPlugin
      *
      * @return  boolean
      *
-     * @since   1.6
+     * @since   1.0
      */
     public function onContentPrepareForm($form)
     {
@@ -93,6 +96,8 @@ class PlgSystemArticleimages extends JPlugin
      * @param   int  $count  count parameter for the image
      *
      * @return  string
+     *
+     * @since  1.0
      */
     public function getXmlForField($count)
     {
@@ -134,7 +139,9 @@ class PlgSystemArticleimages extends JPlugin
      *
      * @param   JLanguage  $language  language object
      *
-     * @return true;
+     * @return true
+     *
+     * @since  1.0
      */
     public function setLanguageService(JLanguage $language)
     {
