@@ -1,0 +1,15 @@
+{
+  "name": "SniperSister/PlgArticleImages",
+  "description": "A plugin to add additional image fields to a Joomla article",
+  "minimum-stability": "stable",
+  "license": "GNU General Public License version 3 or later",
+  "authors": [
+    {
+      "name": "David Jardin",
+      "email": "d.jardin@djumla.de"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  }
+}

@@ -1,0 +1,6 @@
+phpunit.xml
+.idea
+vendor
+build
+composer.lock
+.DS_Store

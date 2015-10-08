@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="user">
+    <name>PLG_SYSTEM_ARTICLEIMAGES</name>
+    <author>David Jardin</author>
+    <creationDate>%%CURRENTDATE%%</creationDate>
+    <copyright>(C) David Jardin - djumla. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later</license>
+    <authorEmail>info@djumla.de</authorEmail>
+    <authorUrl>www.djumla.de</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_ARTICLEIMAGES_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="articleimages">articleimages.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_articleimages.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_articleimages.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_articleimages.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_articleimages.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="imagecount" type="text"
+                       label="PLG_ARTICLEIMAGES_PARAM_IMAGECOUNT"
+                       default="1"
+                        />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
