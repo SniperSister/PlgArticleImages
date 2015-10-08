@@ -103,7 +103,7 @@ class PlgSystemArticleimages extends JPlugin
 	{
 		$label = $this->lang->_('PLG_ARTICLEIMAGES_ADDITIONAL_IMAGE_LABEL') . $count;
 
-		return '<field
+		return '	<field
 					name="image_spacer' . $count . '"
 					type="spacer"
 					hr="true"
@@ -119,10 +119,10 @@ class PlgSystemArticleimages extends JPlugin
 					label="COM_CONTENT_FLOAT_LABEL"
 					description="COM_CONTENT_FLOAT_DESC"
 				>
-						<option value="">JGLOBAL_USE_GLOBAL</option>
-						<option value="right">COM_CONTENT_RIGHT</option>
-						<option value="left">COM_CONTENT_LEFT</option>
-						<option value="none">COM_CONTENT_NONE</option>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="right">COM_CONTENT_RIGHT</option>
+					option value="left">COM_CONTENT_LEFT</option>
+					<option value="none">COM_CONTENT_NONE</option>
 				</field>
 				<field
 					name="image_additional' . $count . '_alt"
